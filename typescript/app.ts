@@ -26,17 +26,6 @@ class GetFretBoardNotes{
 
 }
 
-class ShowOctaves extends GetFretBoardNotes{
-
-    octavesCheckBox = document.querySelector('.form__checkbox');
-
-    showOctaves(){
-        
-    }
-
-
-}
-
 class GetRandomNote extends GetFretBoardNotes{
     getRandomNote(){
         let arr = super.getNotes();
@@ -169,9 +158,6 @@ addListenerToButtons.addListenerToBtns();
 
 let getFretBoardNotes = new GetFretBoardNotes();
 getFretBoardNotes.getNotes();
-
-let showOctaves = new ShowOctaves();
-showOctaves.showOctaves();
 
 let getRandomNote = new GetRandomNote();
 getRandomNote.getRandomNote();
