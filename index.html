@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Guitar Fretboard Note Trainer</title>
+        <meta name="description" content="Guitar Note Trainer that helps you memorize notes on fretboard">
+        <link type="text/css" rel="stylesheet" href="stylesheets/main.css">
+        <link type='text/css' rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.0.0-alpha.6/css/bootstrap.css'>
+        <link rel="icon" href="assets/images/guitarNoteTrainerIcon.png" type="image/x-icon" />
+    </head>
+    <body>
+
+        <header>
+            <h1>Guitar Note Trainer</h1>
+        </header>
+
+        <main>
+
+            <div class="container">
+  
+                <div class="fret-board">
+                <!--     <img src="http://guitarsecrets.com/lessons/images/boardblank.gif"> -->
+                    
+                    <div class="fret-board__frets">
+                        <div class="frets__first-border"></div>
+                        <div class="frets__first"></div>
+                        <div class="frets__fret-0"></div>
+                        <div class="frets__fret-1"></div>
+                        <div class="frets__fret-2"></div>
+                        <div class="frets__fret-3"></div>
+                        <div class="frets__fret-4"></div>
+                        <div class="frets__fret-5"></div>
+                        <div class="frets__fret-6"></div>
+                        <div class="frets__fret-7"></div>
+                        <div class="frets__fret-8"></div>
+                        <div class="frets__fret-9"></div>
+                        <div class="frets__fret-10"></div>
+                        <div class="frets__fret-11"></div>
+                        <div class="frets__fret-12"></div>
+                    </div>
+
+                    <ul class="fret-board__dots">
+                        <li></li>
+                        <li></li>
+                        <li></li>
+                        <li></li>
+                    </ul>
+
+                    <ul class="fret-board__12-fret-dot1">
+                        <li></li>
+                    </ul>
+
+                     <ul class="fret-board__12-fret-dot2">
+                        <li></li>
+                    </ul>
+
+                    <ul class="fret-board__open-notes">
+                        <li class="fret-board__open-notes__low-e">E</li>
+                        <li class="fret-board__open-notes__b">B</li>
+                        <li class="fret-board__open-notes__g">G</li>
+                        <li class="fret-board__open-notes__d">D</li>
+                        <li class="fret-board__open-notes__a">A</li>
+                        <li class="fret-board__open-notes__high-e">E</li>
+                    </ul>
+
+
+                    	<ul class="fret-board__strings">
+                            <li></li>
+                            <li></li>
+                            <li></li>
+                            <li></li>
+                            <li></li>
+                            <li></li>
+                        </ul>
+
+
+
+                    <div class="notes">
+                        <div class="mask low-e"><ul>
+                                <li data-attr='F'></li>
+                                <li data-attr='F#'></li>
+                                <li data-attr='G'></li>
+                                <li data-attr='G#'></li>
+                                <li data-attr='A'></li>
+                                <li data-attr='A#'></li>
+                                <li data-attr='B'></li>
+                                <li data-attr='C'></li>
+                                <li data-attr='C#'></li>
+                                <li data-attr='D'></li>
+                                <li data-attr='D#'></li>
+                                <li data-attr='E'></li>
+                            </ul></div>
+                        <div class="mask a"><ul>
+                                <li data-attr='A#'></li>
+                                <li data-attr='B'></li>
+                                <li data-attr='C'></li>
+                                <li data-attr='C#'></li>
+                                <li data-attr='D'></li>
+                                <li data-attr='D#'></li>
+                                <li data-attr='E'></li>
+                                <li data-attr='F'></li>
+                                <li data-attr='F#'></li>
+                                <li data-attr='G'></li>
+                                <li data-attr='G#'></li>
+                                <li data-attr='A'></li>
+                            </ul></div>
+                        <div class="mask d">
+                            <ul>
+                                <li data-attr="D#"></li>
+                                <li data-attr='E'></li>
+                                <li data-attr='F'></li>
+                                <li data-attr='F#'></li>
+                                <li data-attr='G'></li>
+                                <li data-attr='G#'></li>
+                                <li data-attr='A'></li>
+                                <li data-attr='A#'></li>
+                                <li data-attr='B'></li>
+                                <li data-attr='C'></li>
+                                <li data-attr='C#'></li>
+                                <li data-attr='D'></li>
+                            </ul>
+                        </div>
+                        <div class="mask g">
+                            <ul>
+                                <li data-attr="G#"></li>
+                                <li data-attr='A'></li>
+                                <li data-attr='A#'></li>
+                                <li data-attr='B'></li>
+                                <li data-attr='C'></li>
+                                <li data-attr='C#'></li>
+                                <li data-attr='D'></li>
+                                <li data-attr='D#'></li>
+                                <li data-attr='E'></li>
+                                <li data-attr='F'></li>
+                                <li data-attr='F#'></li>
+                                <li data-attr='G'></li>
+                            </ul>
+                        </div>
+                        <div class="mask b">
+                            <ul>
+                                <li data-attr='C'></li>
+                                <li data-attr='C#'></li>
+                                <li data-attr='D'></li>
+                                <li data-attr='D#'></li>
+                                <li data-attr='E'></li>
+                                <li data-attr='F'></li>
+                                <li data-attr='F#'></li>
+                                <li data-attr='G'></li>
+                                <li data-attr='G#'></li>
+                                <li data-attr='A'></li>
+                                <li data-attr='A#'></li>
+                                <li data-attr='B'></li>
+                            </ul>
+                            </div>
+                        <div class="mask high-e">
+                            <ul>
+                                <li data-attr='F'></li>
+                                <li data-attr='F#'></li>
+                                <li data-attr='G'></li>
+                                <li data-attr='G#'></li>
+                                <li data-attr='A'></li>
+                                <li data-attr='A#'></li>
+                                <li data-attr='B'></li>
+                                <li data-attr='C'></li>
+                                <li data-attr='C#'></li>
+                                <li data-attr='D'></li>
+                                <li data-attr='D#'></li>
+                                <li data-attr='E'></li>
+                            </ul>
+                        </div>
+
+                    
+                    <div class="clear"></div>
+                </div>
+
+
+                
+        </main>
+
+        <div class="container">
+            <div class="notes-to-guess">
+                    <h1 class="text-center">Guess the note:</h1>
+                    <div class="notes-to-guess__notes">
+                        <button>E</button>
+                        <button>F</button>
+                        <button>F#</button>
+                        <button>G</button>
+                        <button>G#</button>
+                        <button>A</button>
+                        <button>A#</button>
+                        <button>B</button>
+                        <button>C</button>
+                        <button>C#</button>
+                        <button>D</button>
+                        <button>D#</button>
+                    </div>
+            </div>
+            
+            <div class="score">
+                <h1>Score: <span class="score__correct">0</span><span class="score__incorrect">0</span></h1>
+            </div>
+
+        </div>
+    
+
+    <!--<script src="../node_modules/systemjs/dist/system.js"></script>
+    <script>
+        SystemJS.import('typescript/app.js');
+    </script>>-->
+
+    <script src='typescript/app.js'></script>
+
+
+    </body>
+</html>
