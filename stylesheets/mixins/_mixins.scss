@@ -1,0 +1,8 @@
+@mixin fret($left, $padding){
+    float: left;
+    width: 3px;
+    height: $neck-height;
+    background: #d7d6d6;
+    margin-left: 75px;
+    border-right: 2px solid $border-color;
+}

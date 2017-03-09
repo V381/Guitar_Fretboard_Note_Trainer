@@ -1,0 +1,53 @@
+@import '../variables/_variables';
+
+.fret-board__dots {
+		position: absolute;
+		height: 20px;
+		top: 46%;
+        left: 15.6%;
+		li {
+			float: left;
+			width: 20px;
+			height: 20px;
+			border-radius: 50%;
+			background: grey;
+            margin-right: 136px;
+		}
+        &:nth-child(1){
+                margin-right: 136px;
+        }
+	}
+
+ .fret-board__12-fret-dot1{
+     	position: absolute;
+		height: 20px;
+		top: 46%;
+        left: 88.6%;
+        li {
+			float: left;
+			width: 20px;
+			height: 20px;
+			border-radius: 50%;
+			background: grey;
+			display: block;
+			position: relative;
+			top : 48px;
+		}
+ }   
+
+ .fret-board__12-fret-dot2{
+     	position: absolute;
+		height: 20px;
+		top: 46%;
+        left: 88.6%;
+        li {
+			float: left;
+			width: 20px;
+			height: 20px;
+			border-radius: 50%;
+			background: grey;
+			display: block;
+			position: relative;
+			bottom : 47px;
+		}
+ }   

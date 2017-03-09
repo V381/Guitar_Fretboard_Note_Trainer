@@ -1,0 +1,128 @@
+@import '../variables/_variables';
+
+
+.fret-board__notes{
+    position: absolute;
+	left: 17px;
+	top: -7px;
+	width: $neck-width;
+	height: 258px;
+	overflow-x: hidden;
+}
+
+.notes__high-e{
+    ul{
+        position: relative;
+        margin-left: 10px;
+        li{
+            float: left;
+			width: 30px;
+			height: 30px;
+			margin-right: 45.8px;
+			background: $neck-notes-color;
+			color: #fff;
+			border-radius: 50%;
+			text-align: center;
+			line-height: 30px;
+			box-shadow: 0px 3px 5px 0px rgba(0,0,0,0.75);
+            position: relative;
+            left: 25px;
+            &:first-child{
+                position: relative;
+                left: 0px;
+            }
+            &:nth-child(2){
+                position: relative;
+                left: 5px;
+            }
+            &:nth-child(3){
+                position: relative;
+                left: 5px;
+            }
+            &:nth-child(4){
+                position: relative;
+                left: 7px;
+            }
+            &:nth-child(5){
+                position: relative;
+                left: 9px;
+            }
+            &:nth-child(6){
+                position: relative;
+                left: 13px;
+            }
+            &:nth-child(7){
+                position: relative;
+                left: 17px;
+            }
+            &:nth-child(8){
+                position: relative;
+                left: 19px;
+            }
+            &:nth-child(9){
+                position: relative;
+                left: 21px;
+            }
+            &:nth-child(9){
+                position: relative;
+                left: 20px;
+            }
+            &:nth-child(10){
+                position: relative;
+                left: 20px;
+            }
+        }
+    }
+}
+
+
+.notes__high-b{
+    @extend .notes__high-e;
+}
+
+.notes__high-g{
+    @extend .notes__high-e;
+}
+
+.notes {
+		position: absolute;
+		left: 17px;
+		top: -7px;
+		width: $neck-width;
+		height: 258px;
+		overflow-x: hidden;
+        transition: 0.5s ease-in-out;
+		.mask {
+			position: absolute;
+			right: -189px;
+			bottom: 0;
+            width: 1154px;
+			height: 30px;
+            transition: 0.5s ease-in-out;
+			ul {
+				position: relative;
+				li {
+					float: left;
+					width: 30px;
+					height: 30px;
+					margin-right: 48px;
+					background: $neck-notes-color;
+					color: #fff;
+					border-radius: 50%;
+					text-align: center;
+					line-height: 30px;
+					box-shadow: 0px 3px 5px 0px rgba(0,0,0,0.75);
+                    list-style-type: none;
+                    opacity: 0;
+                    transition: 0.5s ease-in-out;
+				}
+			}	
+
+			&.a {bottom: 47px;}
+			&.d {bottom: 93px;}
+			&.g {bottom: 137px;}
+			&.b {bottom: 181px;}
+			&.high-e {bottom: 224px;}
+		}
+		
+	}

@@ -1,0 +1,152 @@
+@import '../mixins/_mixins';
+@import '../variables/_variables';
+
+
+.fret-board{
+  position : relative;
+	margin-top: 40px;
+	left: 50%;
+	margin-left: -450px;
+	width: $neck-width;
+	height: $neck-height;
+	background: $neck-color;
+	box-shadow: 5px 5px 5px black;
+}
+
+.fret-board__frets{
+    position: relative;
+}
+
+
+.frets__first{
+    position: absolute;
+	width: 50px;
+	left: -52px;
+	top: 0;
+	margin-left: 0;
+	background: #211f1d;
+    height: $neck-height;
+    box-shadow: 5px 5px 5px black;
+}
+
+.frets__first-border{
+    float: left;
+        width: 0px;
+        height: $neck-height;
+        background: #d7d6d6;
+        margin-left: 5px;
+        border-right: 2px solid $border-color;
+    }
+
+.frets__fret-0{
+    @include fret(0px, 100px);
+}
+
+.frets__fret-1{
+    @include fret(0px, 150px);
+}
+
+.frets__fret-2{
+    @include fret(0px, 200px);
+}
+
+.frets__fret-3{
+    @include fret(0px, 250px);
+}
+
+.frets__fret-4{
+    @include fret(0px, 300px);
+}
+
+.frets__fret-5{
+    @include fret(0px, 350px);
+}
+
+.frets__fret-6{
+    @include fret(0px, 400px);
+}
+
+.frets__fret-7{
+    @include fret(0px, 450px);
+}
+
+.frets__fret-8{
+    @include fret(0px, 500px);
+}
+
+.frets__fret-9{
+    @include fret(0px, 550px);
+}
+
+.frets__fret-10{
+    @include fret(0px, 600px);
+}
+
+.frets__fret-11{
+    @include fret(0px, 650px);
+}
+
+.fret-board__notes{
+  ul{
+    li{
+      display : inline-block;
+    }
+  }
+}
+
+.notes__a-string{
+  z-index : 10;
+  color : green;
+  li{
+    font-weight : bold;
+  }
+}
+
+.fret-board__e-string{
+  border : 1px solid grey;
+  padding : 20px;
+}
+
+.fret-board__b-string{
+  @extend .fret-board__e-string;
+}
+
+.fret-board__g-string{
+  @extend .fret-board__e-string;
+}
+
+.fret-board__e-string{
+  @extend .fret-board__e-string;
+}
+
+.fret-board__d-string{
+  @extend .fret-board__e-string;
+}
+
+.fret-board__a-string{
+  @extend .fret-board__e-string;
+}
+
+.fret-board__e-string{
+  @extend .fret-board__e-string;
+}
+
+
+
+.fret-board__open-notes {
+		position: absolute;
+		top: 3px;
+		left: -70px;
+		li {
+			margin-bottom: 17px;
+			font-size: 18px;
+			color: #fff;
+            list-style: none;
+            font-weight : bold;
+			&.active {
+				color: #fa990f;
+		}
+	}
+}
+
+

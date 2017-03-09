@@ -1,0 +1,25 @@
+@import '../variables/_variables';
+
+.fret-board__strings {
+		position: absolute;
+		left: 0;
+		top: 10px;
+		width: $neck-width;
+		height: $neck-height;
+        padding-left: 0px;
+		
+		li {
+			height: 1px;
+		    display: inline-block;
+			width: 100%;
+			background: #c8bb93;	
+			margin-bottom: 38px;
+			border-bottom: 2px solid #958963;
+			box-sizing: border-box;
+		}
+		li:nth-child(2) {height: 2px;}
+		li:nth-child(3) {height: 3px;}
+		li:nth-child(4) {height: 4px;}
+		li:nth-child(5) {height: 5px;}
+		li:nth-child(6) {height: 6px;}
+	}
