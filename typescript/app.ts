@@ -33,7 +33,7 @@ class GetRandomNote extends GetFretBoardNotes{
     }
 }
 
-// Disable Buttons to prevent 
+// Disable Buttons to prevent multiple clicks
 
 class ActiveButtons{
     buttons = document.querySelector('.notes-to-guess__notes').children;
